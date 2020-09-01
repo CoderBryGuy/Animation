@@ -8,10 +8,21 @@
         tools:context=".MainActivity">
     <ImageView
             android:layout_width="0dp"
-            android:layout_height="0dp" app:srcCompat="@drawable/bart_simpson" android:id="@+id/imageView"
+            android:layout_height="0dp" app:srcCompat="@drawable/bart_simpson" android:id="@+id/bartImageView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            android:adjustViewBounds="false" android:scaleType="fitStart" android:onClick="fade"/>
+            android:adjustViewBounds="false" android:scaleType="fitStart" android:onClick="fade"
+            android:alpha="0" android:layout_marginLeft="-1000dp" android:layout_marginStart="-1000dp"/>
+
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:srcCompat="@drawable/homer_simpson"
+            android:id="@+id/homerImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:adjustViewBounds="false" android:scaleType="fitStart" android:onClick="fade" android:alpha="0"
+    />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
